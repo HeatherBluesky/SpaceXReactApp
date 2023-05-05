@@ -2,23 +2,11 @@
   text-align: center;
   
 }
-html{
+body{
   margin: 0;
   background-size:cover;
   background-image: url(spaceX.JPG);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-#map { height: 180px; }
 
 .App-header {
   background-color: #282c34;
@@ -31,8 +19,9 @@ html{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#webcast-link {
+  color: orange;
+  grid-area: link;
 }
 
 @keyframes App-logo-spin {
@@ -43,6 +32,19 @@ html{
     transform: rotate(360deg);
   }
 }
-.launch-item{
+#launch-detail{
   font: white;
+}
+
+.button {
+  grid-area: link;
+}
+
+#spaceXContainer{
+  display: flex;
+}
+
+h1{
+ text-align: center;
+ font-family: fantasy;
 }

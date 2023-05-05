@@ -7,14 +7,14 @@ const LaunchDetail = ({launch}) => {
             {/* <audio controls>
                 <source src = {launch.links.webcast} type='audio/mp4'></source>
             </audio> */}
-            <h1>{launch.name}</h1>
-            <h2>Launched</h2>
+            <h2>{launch.name}</h2>
+            <h3>Launched</h3>
             {launch.date_local} 
-            <h3>Details: </h3>
-            {launch.details}
+            <h4>Details: </h4>
+            {launch.details} 
             <hr></hr>
-            <a href = {launch.links.webcast}>Link to watch Official Launch Webcast</a>
-            <p>image of craft</p>
+            <a href = {launch.links.webcast} id='webcast-link'>Link to watch Official Launch Webcast </a>
+            <br></br>
             <img id="craft-img" src={launch.links.patch.small}/>
 
 
