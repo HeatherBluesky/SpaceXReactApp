@@ -3,10 +3,11 @@ import LaunchList from '../components/LaunchList';
 import LaunchDetail from '../components/LaunchDetail';
 import LaunchSelector from '../components/LaunchSelector';
 
+
 const SpaceXContainer = () => {
     const [launches, setLaunches] = useState([])
     const [selectedLaunch, setSelectedLaunch] = useState(null)
-    const [searchInput, setSearchInput] = useState("");
+
     
     useEffect(() => {
       getLaunches();
@@ -24,18 +25,14 @@ const SpaceXContainer = () => {
     }
 
 
-    const searchBar = (launch) => {
-      setSearchInput(launch)
-      
-    }
-
     return(
         <>
-        
+        <h1>What Space Craft Did What? </h1>
         {/* {launches.length > 1 ?<LaunchList launches={launches} onLaunchClicked={onLaunchClicked} /> : null} */}
         {/* {selectedLaunch ? <LaunchDetail launch={selectedLaunch}/> : null} */}
         {launches?<LaunchSelector launches={launches} onLaunchSelected={onLaunchClicked}/>: null}
         {selectedLaunch? <LaunchDetail launch={selectedLaunch}/> : null}
+        
         </>
     )
 }

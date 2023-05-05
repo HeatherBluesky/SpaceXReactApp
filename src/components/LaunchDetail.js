@@ -13,7 +13,7 @@ const LaunchDetail = ({launch}) => {
             <h3>Details: </h3>
             {launch.details}
             <hr></hr>
-            <a href = {launch.links.webcast}>link to watch launch</a>
+            <a href = {launch.links.webcast}>Link to watch Official Launch Webcast</a>
             <p>image of craft</p>
             <img id="craft-img" src={launch.links.patch.small}/>
 

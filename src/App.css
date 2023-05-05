@@ -18,6 +18,7 @@ html{
     animation: App-logo-spin infinite 20s linear;
   }
 }
+#map { height: 180px; }
 
 .App-header {
   background-color: #282c34;
