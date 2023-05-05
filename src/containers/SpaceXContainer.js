@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import LaunchList from '../components/LaunchList';
 import LaunchDetail from '../components/LaunchDetail';
+import LaunchSelector from '../components/LaunchSelector';
 
 const SpaceXContainer = () => {
     const [launches, setLaunches] = useState([])
@@ -12,7 +13,7 @@ const SpaceXContainer = () => {
 
 
     const onLaunchClicked = (launch) => {
-        setSelectedLaunch(launch.name)
+        setSelectedLaunch(launch)
       }
 
     const getLaunches = function() {
@@ -23,8 +24,10 @@ const SpaceXContainer = () => {
     return(
         <>
         <h1>SPACE X CONTAINER</h1>
-        launches.lenght > 1? <LaunchList launches={launches} onLaunchClicked={onLaunchClicked} /> 
+        {/* {launches.length > 1 ?<LaunchList launches={launches} onLaunchClicked={onLaunchClicked} /> : null} */}
         {/* {selectedLaunch ? <LaunchDetail launch={selectedLaunch}/> : null} */}
+        {launches?<LaunchSelector launches={launches} onLaunchSelected={onLaunchClicked}/>: null}
+        {selectedLaunch? <LaunchDetail launch={selectedLaunch}/> : null}
         </>
     )
 }
