@@ -4,11 +4,19 @@ const LaunchDetail = ({launch}) => {
     return ( 
         <div className='launch-detail'>
             {/* <a href={launch.links.webcast}></a> */}
-            <a href = {launch.webcast}><h4>{launch.name}</h4></a>
             {/* <audio controls>
                 <source src = {launch.links.webcast} type='audio/mp4'></source>
             </audio> */}
-            <p>{launch.name} launched : {launch.date_local} Details: {launch.details}</p>
+            <h1>{launch.name}</h1>
+            <h2>Launched</h2>
+            {launch.date_local} 
+            <h3>Details: </h3>
+            {launch.details}
+            <hr></hr>
+            <a href = {launch.links.webcast}>link to watch launch</a>
+            <p>image of craft</p>
+            <img id="craft-img" src={launch.links.patch.small}/>
+
 
         </div>
      );

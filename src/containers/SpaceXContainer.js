@@ -6,6 +6,7 @@ import LaunchSelector from '../components/LaunchSelector';
 const SpaceXContainer = () => {
     const [launches, setLaunches] = useState([])
     const [selectedLaunch, setSelectedLaunch] = useState(null)
+    const [searchInput, setSearchInput] = useState("");
     
     useEffect(() => {
       getLaunches();
@@ -21,9 +22,16 @@ const SpaceXContainer = () => {
         .then(results => results.json())
         .then(data => setLaunches(data))
     }
+
+
+    const searchBar = (launch) => {
+      setSearchInput(launch)
+      
+    }
+
     return(
         <>
-        <h1>SPACE X CONTAINER</h1>
+        
         {/* {launches.length > 1 ?<LaunchList launches={launches} onLaunchClicked={onLaunchClicked} /> : null} */}
         {/* {selectedLaunch ? <LaunchDetail launch={selectedLaunch}/> : null} */}
         {launches?<LaunchSelector launches={launches} onLaunchSelected={onLaunchClicked}/>: null}
