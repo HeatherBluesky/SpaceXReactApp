@@ -3,6 +3,7 @@
   
 }
 body{
+  display: flex;
   margin: 0;
   background-size:cover;
   background-image: url(spaceX.JPG);
@@ -35,9 +36,14 @@ body{
 #launch-detail{
   font: white;
 }
-
-.button {
-  grid-area: link;
+select{
+  font-family: monospace;
+  color: teal;
+}
+button {
+  
+  font-family: monospace;
+  
 }
 
 #spaceXContainer{
@@ -48,6 +54,10 @@ h1{
  text-align: center;
  font-family: Playfair Display SC;
  font-size: 50px;
+ display: flex;
+ justify-content: end;
+ color:whitesmoke;
+ margin: 0px
  
  
 }
