@@ -13,6 +13,7 @@ const LaunchDetail = ({launch}) => {
             <p>{launch.details}</p> 
             <img id="craft-img" src={launch.links.patch.small}/>
             <a href = {launch.links.flickr.original}><img id="launch-img" src={launch.links.flickr.original} /></a>
+           
 
 
         </div>

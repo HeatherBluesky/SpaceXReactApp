@@ -4,6 +4,7 @@ import LaunchDetail from '../components/LaunchDetail';
 import LaunchSelector from '../components/LaunchSelector';
 import LaunchFilter from '../components/LaunchFilter';
 import LaunchSuccessItem from '../components/LaunchSuccessItem';
+import cat_launch from '../../src/cat_launch.gif';
 
 
 
@@ -33,15 +34,17 @@ const SpaceXContainer = () => {
     }
     
     
+    
 
 
     return (
         <>
+         
         <h1>Over Yonder </h1>
       
         <a href = {"https://shop.spacex.com/"}><button>Out of this world Products </button></a> 
         {launches?<LaunchSelector launches={launches} onLaunchSelected={onLaunchClicked}/>: null}
-        {selectedLaunch? <LaunchDetail launch={selectedLaunch}/> : null}        
+        {selectedLaunch? <LaunchDetail launch={selectedLaunch}/> : <img src={cat_launch} alt='cat'/>}        
         {/* {launches.length > 1 ?<LaunchList launches={launches} onLaunchClicked={onLaunchClicked} /> : null} */}
         {/* {selectedLaunch ? <LaunchDetail launch={selectedLaunch}/> : null} */}
         </>
