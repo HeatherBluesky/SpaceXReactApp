@@ -66,11 +66,12 @@ button {
 }
 
 
-p {text-align: center;
-  font-family: Playfair Display SC;
+p {
+  text-align: center;
+  font-family: monospace;
   font-size: 30px;
   color: yellow;
-  border-style: solid;
+  
 
 }
 h1{
@@ -93,9 +94,12 @@ h2{
 h3{
 
   font-size: 30px;
+  color: white;
 }
 h4{
   font-size: 30px;
+  color: white;
+
   
 }
  
