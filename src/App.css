@@ -26,6 +26,9 @@ body{
   grid-area: link;
   font-size: 35px;
 }
+#launch-img{
+  height:650px ;
+}
 
 
 select{

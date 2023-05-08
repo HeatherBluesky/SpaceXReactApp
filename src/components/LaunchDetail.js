@@ -18,6 +18,7 @@ const LaunchDetail = ({launch}) => {
             <br></br>
             <img id="craft-img" src={launch.links.patch.small}/>
             <LaunchSuccessItem launch={launch}/>
+            <a href = {launch.links.flickr.original}><img id="launch-img" src={launch.links.flickr.original} /></a>
 
 
         </div>

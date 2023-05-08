@@ -16,6 +16,7 @@ const LaunchSuccessItem = ({launch}) => {
                     <div>
                         <h3>UnSuccessful</h3>
                         <span> &#10060;</span>
+                        <p> {launch.failures.reason}</p>
                     </div>
             )
         }
