@@ -6,7 +6,7 @@ const LaunchSuccessItem = ({launch}) => {
         if(launch.success === true) {
             return(
                 <div>
-                    <h3>Successfull</h3>
+                    <h3>Where They Successfull? </h3>
                     <span> &#9989; </span>
 
                 </div>
@@ -14,7 +14,7 @@ const LaunchSuccessItem = ({launch}) => {
             }else{ 
                 return(
                     <div>
-                        <h3>UnSuccessful</h3>
+                    <h3>Were They Successfull? </h3>
                         <span> &#10060;</span>
                         <p> {launch.failures.reason}</p>
                     </div>
