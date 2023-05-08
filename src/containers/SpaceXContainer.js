@@ -3,7 +3,8 @@ import LaunchList from '../components/LaunchList';
 import LaunchDetail from '../components/LaunchDetail';
 import LaunchSelector from '../components/LaunchSelector';
 import LaunchFilter from '../components/LaunchFilter';
-import LaunchChatForm from '../components/LaunchChatForm';
+import LaunchSuccessItem from '../components/LaunchSuccessItem';
+
 
 
 const SpaceXContainer = () => {
@@ -38,7 +39,7 @@ const SpaceXContainer = () => {
     return (
         <>
         <h1>What Space Craft Did What? </h1>
-        {launches? <LaunchFilter launches={launches} onLaunchFiltered={onFilterClicked}/> :null}
+      
         {/* {launches.length > 1 ?<LaunchList launches={launches} onLaunchClicked={onLaunchClicked} /> : null} */}
         {/* {selectedLaunch ? <LaunchDetail launch={selectedLaunch}/> : null} */}
         {launches?<LaunchSelector launches={launches} onLaunchSelected={onLaunchClicked}/>: null}
@@ -46,6 +47,7 @@ const SpaceXContainer = () => {
         
         <b></b>
         <b></b>
+        
         
         <a href = {"https://shop.spacex.com/"}><button>Out of this world Products </button></a> 
         </>

@@ -4,9 +4,10 @@
 }
 body{
   display: flex;
+  justify-content: center;
   margin: 0;
   background-size:cover;
-  background-image: url(spaceX.JPG);
+  background-image: url(AnyFaithfulHylaeosaurus.webp);
 }
 
 .App-header {
@@ -23,19 +24,10 @@ body{
 #webcast-link {
   color: orange;
   grid-area: link;
+  font-size: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-#launch-detail{
-  font: white;
-}
+
 select{
   font-family: monospace;
   color: teal;
@@ -43,21 +35,41 @@ select{
 button {
   
   font-family: monospace;
-  
+  color: white;
 }
 
 #spaceXContainer{
   display: flex;
 }
-
-h1{
- text-align: center;
- font-family: Playfair Display SC;
- font-size: 50px;
- display: flex;
- justify-content: end;
- color:whitesmoke;
- margin: 0px
- 
- 
+p {text-align: center;
+  font-family: Playfair Display SC;
+  font-size: 30px;
+  color: yellow;
+  border-style: solid;
+  
 }
+h1{
+  text-align: center;
+  font-family: Playfair Display SC;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  color:black;
+  margin: 0px;
+  text-shadow: -1px 0 rgb(246, 255, 0), 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2{
+  font-size: 40px;
+  color: white;
+}
+
+h3{
+
+  font-size: 30px;
+}
+h4{
+  font-size: 30px;
+  
+}
+ 

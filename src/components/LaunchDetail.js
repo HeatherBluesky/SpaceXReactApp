@@ -1,4 +1,5 @@
 import React from 'react';
+import LaunchSuccessItem from './LaunchSuccessItem';
 
 const LaunchDetail = ({launch}) => {
     return ( 
@@ -9,13 +10,14 @@ const LaunchDetail = ({launch}) => {
             </audio> */}
             <h2>{launch.name}</h2>
             <h3>Launched</h3>
-            {launch.date_local} 
+            <p>{launch.date_local} </p>
             <h4>Details: </h4>
-            {launch.details} 
+            <p>{launch.details}</p> 
             <hr></hr>
             <a href = {launch.links.webcast} id='webcast-link'>Link to watch Official Launch Webcast </a>
             <br></br>
             <img id="craft-img" src={launch.links.patch.small}/>
+            <LaunchSuccessItem launch={launch}/>
 
 
         </div>
